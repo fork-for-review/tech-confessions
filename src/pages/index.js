@@ -5,6 +5,7 @@ import SubmitForm from '../components/SubmitForm'
 import Card from '../components/Card'
 import BackToTopButton from '../components/BackToTopButton'
 import ScrollToTop from 'react-scroll-up'
+import DarkModeToggle from '../components/DarkModeToggle';
 
 const CardList = styled.div`
   margin-top: 64px 18px 18px 24px;
@@ -82,6 +83,7 @@ class IndexPage extends React.Component {
 
     return(
       <div>
+        <DarkModeToggle />
         <Header />
         <SubmitForm />
         <CardList>
